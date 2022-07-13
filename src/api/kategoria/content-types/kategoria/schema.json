@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kategorias",
+  "info": {
+    "singularName": "kategoria",
+    "pluralName": "kategorias",
+    "displayName": "Kategoria",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Tytul": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

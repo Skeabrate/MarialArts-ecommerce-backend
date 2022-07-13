@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produkts",
+  "info": {
+    "singularName": "produkt",
+    "pluralName": "produkts",
+    "displayName": "Produkt",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Tytul": {
+      "type": "string",
+      "required": true
+    },
+    "Opis": {
+      "type": "richtext"
+    },
+    "Galeria": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "kategoria": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kategoria.kategoria"
+    },
+    "Wymiary": {
+      "type": "component",
+      "repeatable": true,
+      "component": "wymiary.wymiary"
+    },
+    "Meta_description": {
+      "type": "text",
+      "required": true
+    },
+    "Meta_title": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
