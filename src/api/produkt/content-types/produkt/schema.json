@@ -38,7 +38,8 @@
     "Wymiary": {
       "type": "component",
       "repeatable": true,
-      "component": "wymiary.wymiary"
+      "component": "wymiary.wymiary",
+      "required": true
     },
     "Meta_description": {
       "type": "text",
@@ -46,6 +47,11 @@
     },
     "Meta_title": {
       "type": "text",
+      "required": true
+    },
+    "Link": {
+      "type": "uid",
+      "targetField": "Tytul",
       "required": true
     }
   }
