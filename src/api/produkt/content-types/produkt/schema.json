@@ -53,6 +53,11 @@
       "type": "uid",
       "targetField": "Tytul",
       "required": true
+    },
+    "Dostepnosc": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }
