@@ -58,6 +58,10 @@
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "Meta_keywords": {
+      "type": "string",
+      "required": true
     }
   }
 }
