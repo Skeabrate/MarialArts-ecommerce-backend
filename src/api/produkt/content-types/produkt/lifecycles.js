@@ -26,11 +26,11 @@ module.exports = {
   },
 
   async afterDelete(event) {
-    const { data } = event.params;
+    const { Link } = event.result;
 
     try {
       await axios.post(process.env.REVALIDATE_URL, {
-        slugToRevalidate: data.Link,
+        slugToRevalidate: Link,
       });
     } catch (err) {
       console.log(err);
