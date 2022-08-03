@@ -25,7 +25,7 @@ module.exports = {
     }
   },
 
-  async afterDestroy(event) {
+  async afterDelete(event) {
     const { data } = event.params;
 
     try {
