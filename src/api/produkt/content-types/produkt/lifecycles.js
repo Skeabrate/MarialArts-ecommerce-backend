@@ -1,15 +1,12 @@
+const axios = require("axios").default;
+
 module.exports = {
   async afterUpdate(event) {
-    const { data, where, select, populate } = event.params;
-
-    const JSONbody = {
-      slugToRevalidate: data.Link,
-    };
+    const { data } = event.params;
 
     try {
-      await fetch(env("REVALIDATE_URL"), {
-        method: "POST",
-        body: JSON.stringify(JSONbody),
+      await axios.post(process.env.REVALIDATE_URL, {
+        slugToRevalidate: data.Link,
       });
     } catch (err) {
       console.log(err);
