@@ -7,7 +7,7 @@ module.exports = {
     };
 
     try {
-      await fetch(process.env.REVALIDATE_URL, {
+      await fetch(env("REVALIDATE_URL"), {
         method: "POST",
         body: JSON.stringify(JSONbody),
       });
