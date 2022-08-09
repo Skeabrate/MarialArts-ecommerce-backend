@@ -41,14 +41,6 @@
       "component": "wymiary.wymiary",
       "required": true
     },
-    "Meta_description": {
-      "type": "text",
-      "required": true
-    },
-    "Meta_title": {
-      "type": "text",
-      "required": true
-    },
     "Link": {
       "type": "uid",
       "targetField": "Tytul",
@@ -59,8 +51,10 @@
       "default": true,
       "required": true
     },
-    "Meta_keywords": {
-      "type": "string",
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
       "required": true
     }
   }

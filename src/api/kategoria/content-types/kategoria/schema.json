@@ -16,6 +16,17 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
+    },
+    "Link": {
+      "type": "uid",
+      "targetField": "Tytul",
+      "required": true
     }
   }
 }

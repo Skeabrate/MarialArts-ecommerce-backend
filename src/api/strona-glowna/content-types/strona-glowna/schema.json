@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "strona_glownas",
+  "info": {
+    "singularName": "strona-glowna",
+    "pluralName": "strona-glownas",
+    "displayName": "Strona główna"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Tytul": {
+      "type": "string"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
+    }
+  }
+}
