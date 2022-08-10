@@ -19,7 +19,8 @@
     },
     "Link": {
       "type": "uid",
-      "targetField": "Tytul"
+      "targetField": "Tytul",
+      "required": true
     }
   }
 }
