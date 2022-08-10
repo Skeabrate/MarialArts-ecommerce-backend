@@ -3,7 +3,9 @@ const axios = require("axios").default;
 module.exports = {
   async afterCreate() {
     try {
-      await axios.post(process.env.REVALIDATE_URL, {});
+      await axios.post(process.env.REVALIDATE_URL, {
+        updateCategories: true,
+      });
     } catch (err) {
       console.log(err);
     }
@@ -11,7 +13,9 @@ module.exports = {
 
   async afterUpdate() {
     try {
-      await axios.post(process.env.REVALIDATE_URL, {});
+      await axios.post(process.env.REVALIDATE_URL, {
+        updateCategories: true,
+      });
     } catch (err) {
       console.log(err);
     }
@@ -19,7 +23,9 @@ module.exports = {
 
   async afterDelete() {
     try {
-      await axios.post(process.env.REVALIDATE_URL, {});
+      await axios.post(process.env.REVALIDATE_URL, {
+        updateCategories: true,
+      });
     } catch (err) {
       console.log(err);
     }
