@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * kategoria router.
+ * category router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::kategoria.kategoria');
+module.exports = createCoreRouter('api::category.category');
