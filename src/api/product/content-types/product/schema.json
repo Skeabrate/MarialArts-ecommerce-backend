@@ -36,22 +36,24 @@
       "targetField": "title",
       "required": true
     },
-    "seo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "seo.seo",
-      "required": true
-    },
     "size": {
       "type": "component",
       "repeatable": true,
       "component": "size.size",
-      "required": true
+      "required": false
     },
     "category": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category"
+    },
+    "color": {
+      "type": "component",
+      "repeatable": true,
+      "component": "color.color"
+    },
+    "price": {
+      "type": "float"
     }
   }
 }

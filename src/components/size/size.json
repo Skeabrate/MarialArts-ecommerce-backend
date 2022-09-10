@@ -12,7 +12,7 @@
     },
     "price": {
       "type": "float",
-      "required": true
+      "required": false
     },
     "sale": {
       "type": "float"
